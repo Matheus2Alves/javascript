@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var preço_do_produto = Number(window.prompt('coloca o preço'))
+        var promoção = 300
+        var valor_promo = 20
+        var promoção_ativa = (preço_do_produto * valor_promo) / 100
+        if (preço_do_produto >= promoção) {
+            var preço_final = preço_do_produto - promoção_ativa
+            window.alert(`valor final é ${preço_final}`)
+            } else {
+                window.alert('Sem desconto')
+            }
+    </script>
+</body>
+</html>
