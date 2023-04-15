@@ -16,4 +16,6 @@ if (horário < 12 && horário > 5) {
     body.style.backgroundColor = '#E06522'
     horário_texto.innerHTML = `são <strong>${horário}</strong> da tarde`
     imagem_do_clima.style.backgroundImage = 'url("./imagens/midday_landscape.png")'
-} 
+} else{
+    horário_texto.innerHTML = `são <strong>${horário}</strong> da noite`
+}
