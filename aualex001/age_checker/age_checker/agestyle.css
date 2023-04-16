@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+    violeta: #EE82EE
+    amarelo: #EBDA17
+    vermelho: #EF2828
+    cinza: #606363
+*/
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background-color: #ebd217;
+}
+
+header{
+    display: grid;
+    place-items: center;
+}
+
+section{
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    background-color: #f3a81b;
+    border-radius: 10px;
+    padding: 10px;
+    transform: translate(-50%, 50%);
+    width: 400px;
+    height: 350px;
+}
+
+input, h2{
+    margin-top: 8px;
+    text-align: center;
+}
+
+fieldset{
+    border: none;
+}
+
+#enviar, #age{
+    background-color: #000000;
+    color: white;
+    padding: 3px;
+}
+
+div#image{
+    margin: auto;
+    background: black url(../imagens/adolescente_homem.jpg) no-repeat fixed;
+    background-size: cover;
+    width: 370px;
+    height: 200px;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+
+footer{
+    position: absolute;
+    top: 95vh;
+    width: 100vw;
+    background-color: #8c6d0a;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
