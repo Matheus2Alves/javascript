@@ -37,6 +37,7 @@ section{
     transform: translate(-50%, 50%);
     width: 400px;
     height: 350px;
+    box-shadow: 2px 2px 10px black
 }
 
 input, h2{
@@ -59,7 +60,7 @@ div#image{
     background: black url(../imagens/adolescente_homem.jpg) no-repeat fixed;
     background-size: cover;
     width: 370px;
-    height: 200px;
+    height: 190px;
     margin-top: 10px;
     border: 2px solid black;
 }
