@@ -18,8 +18,8 @@ html,body{
     height: 100vh;
 }
 
-body{
-    background-color: #ebd217;
+#body{
+    background-color: #ebd217;*
 }
 
 header{
@@ -27,7 +27,7 @@ header{
     place-items: center;
 }
 
-section{
+#container{
     position: absolute;
     top: -10%;
     left: 50%;
@@ -69,7 +69,7 @@ footer{
     position: absolute;
     top: 95vh;
     width: 100vw;
-    background-color: #8c6d0a;
+    background-color: #000000;
     text-align: center;
     color: white;
     padding: 10px;
