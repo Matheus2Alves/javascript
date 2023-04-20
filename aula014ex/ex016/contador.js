@@ -6,7 +6,7 @@ function calcular(){
     var fim = document.querySelector('#final')
     var passo = document.querySelector('#passo')
     var res = document.querySelector('#res')    
-    if(começo.value.length == '' || fim.value.length == '' || passo.value.length == '') {
+    if(começo.value.length == '' || fim.value.length == '' || passo.value.length == '' || passo.value.length == '0' ) {
         res.innerHTML = '[ERRO] preencha todos os dados!'
     } else{
         var resultado = ``
