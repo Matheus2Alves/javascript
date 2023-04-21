@@ -19,13 +19,3 @@ function tabuada() {
 }       
 
 
-/*tabarea.innerHTML = `${numtab} x 1 = ${resultado[0]}<br>` 
-        tabarea.innerHTML += ` ${numtab} x 2 = ${resultado[1]}<br>`
-        tabarea.innerHTML += `${numtab} x 3 = ${resultado[2]}<br>`
-        tabarea.innerHTML += ` ${numtab} x 4 = ${resultado[3]}<br>`
-        tabarea.innerHTML += `${numtab} x 5 = ${resultado[4]}<br>`
-        tabarea.innerHTML += ` ${numtab} x 6 = ${resultado[5]}<br>`
-        tabarea.innerHTML += `${numtab} x 7 = ${resultado[6]}<br>`
-        tabarea.innerHTML += ` ${numtab} x 8 = ${resultado[7]}<br>`
-        tabarea.innerHTML += `${numtab} x 9 = ${resultado[8]}<br>`
-        tabarea.innerHTML += ` ${numtab} x 10 = ${resultado[9]}<br>`*/
