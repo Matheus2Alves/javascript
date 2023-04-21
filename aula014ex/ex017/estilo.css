@@ -29,6 +29,7 @@ header{
 section{
     background-color: rgb(130, 238, 238);
     position: absolute;
+    display: grid;
     border: 1px solid black;
     border-radius: 5px;
     width: 400px;
@@ -38,6 +39,12 @@ section{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+#fazer{
+    background-color: rgb(134, 202, 234);
+    margin-top: 6px;
+    border: transparent;
 }
 
 footer{
