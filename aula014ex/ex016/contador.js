@@ -10,8 +10,14 @@ function calcular(){
         res.innerHTML = '[ERRO] preencha todos os dados!'
     } else{
         var resultado = ``
-        for (var começores = parseInt(começo.value); começores <= parseInt(fim.value); começores += parseInt(passo.value)) {
-            resultado += `${começores} &#x27a1;`
+        if (começo < fim) {
+            for (let começores = parseInt(começo.value); começores <= parseInt(fim.value); começores += parseInt(passo.value)) {
+                resultado += `${começores} &#x27a1;`
+            }
+        } else {
+            for (let começores = parseInt(começo.value); começores >= parseInt(fim.value); começores -= parseInt(passo.value)) {
+                resultado += `${começores} &#x27a1;`
+            }
         }
         res.innerHTML = `${resultado} &#x1F3C1;`
     }
