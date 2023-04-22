@@ -10,8 +10,7 @@ function tabuada() {
         var resultado = ''
         var numtab = Number(tabnum.value)
         for(var tabuada = 1; tabuada <= 10; tabuada++) {
-            tabres = tabuada * numtab
-            resultado += `${numtab} x ${tabuada} = ${tabres } \n `
+            resultado += `${numtab} x ${tabuada} = ${tabuada*numtab} \n `
         }
         tabarea.innerHTML = resultado
     } 
