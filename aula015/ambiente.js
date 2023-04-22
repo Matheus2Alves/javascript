@@ -7,4 +7,12 @@ bingo.push(8)
 console.log(bingo)
 bingo.sort()
 console.log(bingo)
+let pos = bingo.indexOf(8)
+
+if(pos == -1) {
+    console.log('nao existe esse dado')
+} else {
+   console.log(`qual é ${pos}`) 
+}
+
 
