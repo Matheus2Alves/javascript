@@ -32,12 +32,14 @@ function envia() {
         finalizar.addEventListener('click', final)
         function final() {
             let menor = Math.min(...valores)
+            let maior = Math.max(...valores)
             let soma = 0
             for (let pos = 0; pos < valores.length; pos++) {
                  soma += Number(valores[pos])
             }
             let media = Number(soma) / Number(valores.length)
-            res.innerHTML = `Ao todo, temos ${valores} números cadastrados` 
+            res.innerHTML = `Ao todo, temos ${valores.length} números cadastrados` 
+            res.innerHTML += `<br> O maior valor informado foi ${maior}`
             res.innerHTML += `<br> O menor valor informado foi ${menor}`
             res.innerHTML += `<br>Somando todos os valores o resultado é ${soma}`
             res.innerHTML += `<br>a média dos valores é ${media}`
