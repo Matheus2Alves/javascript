@@ -14,7 +14,7 @@ function yesNumber(n) {
 }
 
 function yesList(n, valores) {
-    if (valores.indexOf(Numbern(n)) != -1) {
+    if (valores.indexOf(Number(n)) != -1) {
         return true
     } else {
         return false
@@ -22,5 +22,9 @@ function yesList(n, valores) {
 }
 
 function envia() {
-    if (yesNumber(txtnum.value) && !yesList(txtnum.value, valores))
+    if (yesNumber(txtnum.value) && !yesList(txtnum.value, valores)) {
+        window.alert('boa')
+    } else {
+        window.alert('o seu valor precisa ser um número e não pode já estar inserido na lista!')
+    }
 }
