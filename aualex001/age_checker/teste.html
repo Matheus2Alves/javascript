@@ -51,33 +51,34 @@
     <h1>Calculadora</h1>
     <section class="calculadora">
         <input type="number" name="txt1" id="txt1">
-        <input type="number" name="txt1" id="txt2">
+        <input type="number" name="txt2" id="txt2">
         <input type="button" value="somar">
-        <div id="resultado">
-            
+        <div class="resultado">
+
         </div>
     </section>
-</body>
-    <script>
-        let somar = document.getElementsByTagName('input')[2]
-        function somarTudo() {
-            let txt1= document.querySelector('input#txt1')
-            let txt2 = document.querySelector('input#txt2')
-            let resultado = document.querySelector('div#resultado')
-            let n1 = Number(txt1.value)
-            let n2 = Number(txt2.value)
-            let soma= n1 + n2
-            resultado.innerHTML = `<p><strong>${soma}</strong></p>`
-        }
+</body>    
+<script>
+   let somar = document.getElementsByTagName('input')[2]
 
-        somar.addEventListener('click', function(){
-            somarTudo()
-        })
+   function somarTudo(){
+    let inp1 = document.querySelector('input#txt1')
+    let inp2 = document.querySelector('input#txt2')
+    let resultado = document.querySelector('div.resultado')
+    let n1 = Number(inp1.value)
+    let n2 = Number(inp2.value)
+    let soma = n1 + n2
+    resultado.innerHTML = `${soma}`
+   }
 
-        document.addEventListener('keydown', function(){
-            if(event.key === 'Enter' || event.keyCode === 13) {
-                somarTudo()
-            }
-        })
-    </script>
+   document.addEventListener('keydown', function(){
+    if(event.key === 'Enter' || keyCode === 13){
+        somarTudo()
+    }
+   })
+
+   somar.addEventListener('click', function(){
+    somarTudo()
+   })
+</script>
 </html>
