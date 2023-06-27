@@ -3,14 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            background-color: rgb(123, 234, 158);
+        }
+
+        h1{
+            text-align: center;
+            padding: 15px;
+        }
+
+        .calculadora{
+            display: grid;
+            align-self: center;
+            align-self: center;
+            background-color: white;
+            border-radius: 10px;
+            width: 400px;
+            height: 330px;
+            padding: 10px;
+            margin: auto;
+
+        }
+
+        #txt1, #txt2{
+            text-align: center;
+            font-size: 2em;
+        }
+
+        #resultado{
+            font-size: 2em;
+            font-weight: bolder;
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>bla</h1>
-    <script>
-        let n1 = window.prompt('Insira um numero: ')
-        let n2 = window.prompt('insira outro')
-        let resultado = window.alert(Number(n1 + n2))
-    </script>
+    <h1>Calculadora</h1>
+    <section class="calculadora">
+        <input type="number" name="txt1" id="txt1">
+        <input type="number" name="txt1" id="txt2">
+        <input type="button" value="somar">
+        <div id="resultado">
+            
+        </div>
+    </section>
 </body>
+    <script>
+        let somar = document.getElementsByTagName('input')[2]
+        function somarTudo() {
+            let txt1= document.querySelector('input#txt1')
+            let txt2 = document.querySelector('input#txt2')
+            let resultado = document.querySelector('div#resultado')
+            let n1 = Number(txt1.value)
+            let n2 = Number(txt2.value)
+            let soma= n1 + n2
+            resultado.innerHTML = `<p><strong>${soma}</strong></p>`
+        }
+
+        somar.addEventListener('click', function(){
+            somarTudo()
+        })
+
+        document.addEventListener('keydown', function(){
+            if(event.key === 'Enter' || event.keyCode === 13) {
+                somarTudo()
+            }
+        })
+    </script>
 </html>
