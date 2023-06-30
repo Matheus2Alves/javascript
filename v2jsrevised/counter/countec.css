@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: black
+}
+
+.container{
+    background: linear-gradient(-45deg, rgb(118, 5, 5), purple);
+    width: 350px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+label{
+    color: white;
+    padding: 10px 0px;
+    width: 200px;
+       text-align: center;
+}
+
+input{
+    width: 200px;
+}
+
+.resulatado{
+    width: 330px;
+}
+
+p{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: white;
+}
