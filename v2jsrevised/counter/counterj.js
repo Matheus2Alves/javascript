@@ -16,24 +16,27 @@ window.onload = function() {
                 if(passo.value == '') {
                     window.alert('como o passo não foi preenchido, iremos presumir que seja 1')
                     passo.value = 1
-                    calcularNum()
+                    calcularNum()      
                 } else {
                     calcularNum()                   
-                }
                 break
             }
-        
-        function calcularNum() {
-            resultado.innerHTML = ''
-            for(let a = parseInt(inicio.value); a <= parseInt(final.value); a += parseInt(passo.value)) {
-                const mao = '\uD83D\uDC49'
-                resultado.innerHTML += mao + a
-            }
-            const bandeira = '\u{1F3C1}'
-            resultado.innerHTML += bandeira
-        }
-        })
-    }
-    /*case passo.value == '':
-        resultado.innerHTML = 'como o passo não foi preenchido, iremos presumir que seja 1'
-        break   */ 
+        }    
+            function calcularNum() {
+                resultado.innerHTML = ''
+                if(Number(inicio.value) >= Number(final.value)) {
+                    for(let a = Number(inicio.value); a >= Number(final.value); a -= Number(passo.value)) {
+                        const mao = '\uD83D\uDC49'
+                        resultado.innerHTML += mao + a
+                    }
+                } else {
+                    for(let a = Number(inicio.value); a <= Number(final.value); a += Number(passo.value)) {
+                        const mao = '\uD83D\uDC49'
+                        resultado.innerHTML += mao + a
+                    }
+                }
+                const bandeira = '\u{1F3C1}'
+                resultado += bandeira
+            }            
+    })
+}
