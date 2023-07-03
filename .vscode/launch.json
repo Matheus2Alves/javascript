@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\exfinal\\ex07\\ananum.js"
+            "program": "${workspaceFolder}\\v2jsrevised\\counter\\counterj.js"
         }
     ]
 }
