@@ -42,8 +42,8 @@ window.onload = function() {
             let soma = 0
             let media = 0
             for(let pos in número_array) {
-                soma += valores[pos]
-                if(nùmero_array[pos] > maior) {
+                soma += número_array[pos]
+                if(número_array[pos] > maior) {
                     maior = número_array[pos]
                 }
                 if(número_array[pos] < menor ) {
@@ -51,13 +51,15 @@ window.onload = function() {
                 }
             }
             media = soma / número_array.length
-            examinar.innterHTML = ''
-            examinar.innerHTML +=  `ao todo, temos ${número_array.length} cadastrados  o maior valor informado foi ${maior}  o menor valor informado foi o ${menor}  a soma de todos os valores é ${soma}  a média dos valores é ${media}` 
+            examinar.innerHTML = ''
+            examinar.innerHTML +=  `ao todo, temos ${número_array.length} cadastrados <br>` 
+            examinar.innerHTML += `o maior valor informado foi ${maior}<br>`
+            examinar.innerHTML += `o menor valor informado foi o ${menor}<br>`
+            examinar.innerHTML += `a soma de todos os valores é ${soma}<br>`
+            examinar.innerHTML += `a média dos valores é ${media}<br>`
         }    
     })
 }
 
 
 
-/*function exibirArray() {
-}*/
